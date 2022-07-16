@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get "validation_codes/create"
+  get 'home/index'
+  # get "validation_codes/create"
+  get '/', to: "home#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   namespace :api do
